@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小農故事</title>
+    <link rel="stylesheet" type="text/css" href="farmer_story.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+  <body class="container">
+  	
+  	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+					<p class="navbar-text"><span class="glyphicon glyphicon-leaf"></span> 小農故事</p>
+    		</div>
+    		<div>
+      		<ul class="nav navbar-nav navbar-right">
+        		<li class="dropdown">
+          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">林緯政  <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+            		<li><a href="#">設定</a></li>
+            		<li><a href="#">登出</a></li>
+          		</ul>
+        		</li>
+      		</ul>
+    		</div>
+  		</div>
+		</nav>
+
+		<section>
+			<div>
+  			<ul class="nav nav-pills col-md-10">
+    			<li class="active"><a data-toggle="pill" href="#home">我的生產履歷</a></li>
+    			<li><a data-toggle="pill" href="#menu1">未上市</a></li>
+    			<li><a data-toggle="pill" href="#menu2">已上市</a></li>
+    			<li><a data-toggle="pill" href="#menu3">已售完</a></li>
+  			</ul>
+        <div class="col-md-2">
+          <a href="farmerStory_farmer_newResumeForm.html" class="btn btn-success btn-lg" role="button"><span class="glyphicon glyphicon-plus"></span>　新履歷</a>
+        </div>
+
+  			<div class="tab-content">
+    			<div id="home" class="tab-pane fade in active">
+      			<div class="col-md-6">
+              <a href="farmerStory_farmer_resume_1.html"><img src="未上市.jpg"></a>
+              <img src="已上市_2.jpg">
+      					<!-- <div>未上市</div>
+      					<div><img src=""></div>
+      					<div>#like #追蹤</div>
+      					<div>菜名#1</div>
+      					<div>播種時間</div>
+      					<div>feature</div>
+      					<div>近況</div>
+      					<div>#天前</div> -->
+      			</div>
+      			<div class="col-md-6">
+              <img src="已上市_1.jpg">
+              <img src="已售完.jpg">
+      					<!-- <div>未上市</div>
+      					<div><img src=""></div>
+      					<div>#like #追蹤</div>
+      					<div>菜名#1</div>
+      					<div>播種時間</div>
+      					<div>feature</div>
+      					<div>近況</div>
+      					<div>#天前</div> -->
+      			</div>
+    			</div>
+    			<div id="menu1" class="tab-pane fade">
+      			<div class="col-md-6">
+              <a href="farmerStory_farmer_resume_1.html"><img src="未上市.jpg"></a>
+            </div>
+            <div class="col-md-6">
+            </div>
+    			</div>
+    			<div id="menu2" class="tab-pane fade">
+      			<div class="col-md-6">
+              <img src="已上市_1.jpg">
+            </div>
+            <div class="col-md-6">
+              <img src="已上市_2.jpg">
+            </div>
+    			</div>
+    			<div id="menu3" class="tab-pane fade">
+      			<div class="col-md-6">
+              <img src="已售完.jpg">
+            </div>
+            <div class="col-md-6">
+            </div>
+    			</div>
+  			</div>
+			</div>
+		</section>
+  </body>
+</html>

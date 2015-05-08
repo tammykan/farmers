@@ -1,0 +1,32 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+
+nav{
+	font-family: "微軟正黑體", serif;
+	font-size: 18px;
+}
+
+body{
+	max-width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+img{
+	padding-top: 20px;
+}
+
+#new-diary{
+	border-style: dashed;
+	border-width: 2px;
+	font-family: "微軟正黑體", serif;
+}
+
+.btn, .nav, .diary, form{
+	font-family: "微軟正黑體", serif;
+}
+
+.diary{
+	position: relative;
+	margin-top: 20px;
+}
