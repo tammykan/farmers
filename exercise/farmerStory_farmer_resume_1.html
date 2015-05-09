@@ -37,8 +37,29 @@
     	</div>
     	<div class="col-md-12">　</div>
     	<button id="new-diary" class="btn btn-default btn-lg btn-block">新增日記</button>
-
-    	<div class="row diary">
+      
+      <div id="new-diary-area" class="row">
+        <form class="col-md-2">
+          <div class="form-group">
+            <label class="sr-only" for="latest_change">近況</label>
+            <input id="latest_change" type="text" class="form-control" placeholder="輸入近況..." required>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="change_date">更新日期</label>
+            <input id="change_date" type="date" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <a class="btn btn-danger" id="change_cancel">取消</a>
+            <button type="submit" class="btn btn-success">確認</button>
+          </div>
+        </form>
+        <div class="col-md-10">
+          <label>近況照片</label><br>
+          <button id="latest_change_pic" class="btn btn-default"><i class="fa fa-plus"></i></button>
+        </div>
+      </div>
+    	
+      <div class="row diary">
     		<div class="col-md-2">
     			<h3>近況2</h3>
     			<p>日期</p>
@@ -57,5 +78,23 @@
     		</div>
     	</div>
     </section>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#new-diary-area').hide();
+        $('#new-diary').on('click', function(){
+          $('#new-diary').fadeOut('slow', function(){
+            $('#new-diary').hide();
+            $('#new-diary-area').fadeIn('slow');
+          });
+        });
+        $('#change_cancel').on('click', function(){
+          $('#new-diary-area').fadeOut('slow', function(){
+            $('#new-diary-area').hide();
+            $('#new-diary').fadeIn('slow');
+          });
+        })
+      });
+    </script>
   </body>
  </html>

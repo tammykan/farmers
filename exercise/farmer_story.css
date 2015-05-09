@@ -37,3 +37,10 @@ img{
 	width: 200px;
 	height: 200px;
 }
+
+#latest_change_pic{
+	border-style: dashed;
+	border-width: 2px;
+	width: 140px;
+	height: 140px;
+}
