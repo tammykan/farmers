@@ -30,3 +30,10 @@ img{
 	position: relative;
 	margin-top: 20px;
 }
+
+#new-photo{
+	border-style: dashed;
+	border-width: 2px;
+	width: 200px;
+	height: 200px;
+}

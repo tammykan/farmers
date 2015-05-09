@@ -18,7 +18,7 @@
         <div>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">林緯政  <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> 林緯政  <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">設定</a></li>
                 <li><a href="#">登出</a></li>
@@ -28,36 +28,43 @@
         </div>
       </div>
     </nav>
+    
+    <div class="col-md-4 col-md-offset-1">
+      <label for="new-photo">作物相片</label><br>
+      <button id="new-photo" class="btn btn-default"><i class="fa fa-plus"></i></button>
+    </div>
   	<form role="form form-horizontal">
-  		<div class="form-group">
-        <label for="crop" class="control-label">作物名：</label>
-        <input class="form-control" type="text" id="crop" required autofocus>
-      </div>
-      <div class="form-group">
-        <label for="start_time">播種時間：</label>
-        <select class="form-control" id="start_time" required>
-          <option value="" disabled selected>---選擇時間---</option>
-          <option value="2014-4">2014 年 第 4 期</option>
-          <option value="2015-1">2015 年 第 1 期</option>
-          <option value="2015-2">2015 年 第 2 期</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="location">種植地點：</label>
-        <input class="form-control" type="text" id="location" required>
-      </div>
-      <div class="form-group">
-        <label for="sell_date">預定販售日：</label>
-        <input class="form-control" type="date" id="sell_date" required>
-      </div>
-      <div class="form-group">
-        <label for="feature">特色：</label>
-        <textarea class="form-control" rows="3" id="feature" required></textarea>
-      </div>
-      <div class="form-group form-inline">
-        <a href="farmerStory_farmer.html" class="btn btn-danger btn-lg">取消</a>
-        <a href="#" class="btn btn-info btn-lg">預覽</a>
-        <button type="submit" class="btn btn-primary btn-lg">送出</button>
+      <div class="col-md-6">
+  		  <div class="form-group">
+          <label for="crop" class="control-label">作物名：</label>
+          <input class="form-control" type="text" id="crop" required autofocus>
+        </div>
+        <div class="form-group">
+          <label for="start_time">播種時間：</label>
+          <select class="form-control" id="start_time" required>
+            <option value="" disabled selected>---選擇時間---</option>
+            <option value="2014-4">2014 年 第 4 期</option>
+            <option value="2015-1">2015 年 第 1 期</option>
+            <option value="2015-2">2015 年 第 2 期</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">種植地點：</label>
+          <input class="form-control" type="text" id="location" required>
+        </div>
+        <div class="form-group">
+          <label for="sell_date">預定販售日：</label>
+          <input class="form-control" type="date" id="sell_date" required>
+        </div>
+        <div class="form-group">
+          <label for="feature">特色：</label>
+          <textarea class="form-control" rows="3" id="feature" required></textarea>
+        </div>
+        <div class="form-group form-inline">
+          <a href="farmerStory_farmer.html" class="btn btn-danger btn-lg">取消</a>
+          <a href="#" class="btn btn-info btn-lg">預覽</a>
+          <button type="submit" class="btn btn-primary btn-lg">送出</button>
+        </div>
       </div>
   	</form>
   </body>
