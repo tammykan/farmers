@@ -10,6 +10,7 @@ body{
 	max-width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
+	font-family: "微軟正黑體", serif;
 }
 
 img{
@@ -22,7 +23,7 @@ img{
 	font-family: "微軟正黑體", serif;
 }
 
-.btn, .nav, .diary, form{
+.btn, .nav, .diary, .cropInfo, form{
 	font-family: "微軟正黑體", serif;
 }
 
@@ -43,4 +44,92 @@ img{
 	border-width: 2px;
 	width: 140px;
 	height: 140px;
+}
+
+.tag {
+	position: absolute;
+	text-align: right;
+	width: 70px; 
+	padding: 5px 1px 5px 10px;
+	left: -1rem;
+	z-index: 2;
+}
+
+.notOnS {
+	background-color: #DFDFDF;
+}
+
+.pic {
+	position: relative;
+	/*margin-left: 5px;*/
+	border: 1px solid #DDDDDD;
+	width: 120px;
+	height: 120px;
+	z-index: -1;
+}
+
+.picBig {
+	position: relative;
+	/*margin-left: 5px;*/
+	border: 1px solid #DDDDDD;
+	width: 150px;
+	height: 150px;
+	z-index: -1;
+}
+
+.cropInfo {
+	height: 180px;
+	border: 1px solid #DDDDDD;
+	border-radius: 1em;
+	margin: 20px;
+	padding-top: 20px;
+}
+
+.resumeInfo{
+	padding-left: 40px;
+}
+
+.underPic {
+	margin-left: 5px;
+	padding-top: 5px; 
+}
+
+#bookMarkNum {
+	margin-right: 2em;
+}
+
+.cropTitle {
+	font-size: 28px;
+	font-style: bold;
+	padding-bottom: 10px;
+	margin-right: 20px;
+}
+
+.underLine{
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.detail {
+	font-size: 16px;
+	padding: 5px;
+}
+
+.recentDay {
+	margin-left: 2em;
+	background-color: #00AAAA;
+	color: white;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
+
+.underPic, .cropTitle, .detail, .tag{
+	color: #444444;
+}
+
+.nowOnSale {
+	background-color: #77FFCC;
+}
+
+.soldOut {
+	background-color: #FFCCCC;
 }
